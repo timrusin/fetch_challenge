@@ -1,9 +1,10 @@
+const payers = require('./payers_data')
 const express = require('express');
 
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello')
+    res.send(payers)
 });
 
 app.listen (3000, () => {
